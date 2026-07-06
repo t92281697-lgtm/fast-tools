@@ -1,82 +1,78 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fast Tools</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fast Tools - Free Online Tools</title>
 
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    margin:0;
-}
+  <meta name="description" content="無料・ログイン不要で使える便利なWebツール集">
 
-header{
-    background:#2563eb;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-
-main{
-    max-width:900px;
-    margin:auto;
-    padding:30px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    margin-bottom:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,.08);
-}
-
-button{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-button:hover{
-    opacity:.9;
-}
-</style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>⚡ Fast Tools</h1>
-<p>無料で使える便利ツール</p>
+  <div class="container nav">
+    <h1>⚡ Fast Tools</h1>
+
+    <button id="themeBtn">🌙</button>
+  </div>
 </header>
 
-<main>
+<section class="hero">
+
+<h2>Fast, Free, No Login.</h2>
+
+<p>
+無料で使えるオンラインツール
+</p>
+
+<input
+id="search"
+type="text"
+placeholder="ツールを検索..."
+>
+
+</section>
+
+<main class="container">
+
+<h3>人気ツール</h3>
+
+<div class="grid">
 
 <div class="card">
-<h2>QR Generator</h2>
+<h4>🔳 QR Generator</h4>
 <p>近日公開</p>
-<button>Coming Soon</button>
 </div>
 
 <div class="card">
-<h2>JSON Formatter</h2>
+<h4>🔐 Password Generator</h4>
 <p>近日公開</p>
-<button>Coming Soon</button>
 </div>
 
 <div class="card">
-<h2>Password Generator</h2>
+<h4>📄 JSON Formatter</h4>
 <p>近日公開</p>
-<button>Coming Soon</button>
+</div>
+
+<div class="card">
+<h4>🆔 UUID Generator</h4>
+<p>近日公開</p>
+</div>
+
 </div>
 
 </main>
+
+<footer>
+
+© 2026 Fast Tools
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
