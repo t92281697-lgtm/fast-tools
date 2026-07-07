@@ -1,1 +1,39 @@
-<h1>QR Generator</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator | Fast Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>QR Code Generator</h1>
+
+<p>
+URLや文字を入力してください
+</p>
+
+<input
+id="text"
+placeholder="https://example.com"
+>
+
+<button onclick="makeQR()">
+QRコード生成
+</button>
+
+<div id="qrcode"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
