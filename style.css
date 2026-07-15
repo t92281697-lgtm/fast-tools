@@ -12,11 +12,6 @@
     --shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-body.dark{
-    --bg:#0f172a;
-    --card:#1e293b;
-    --text:#f8fafc;
-}
 
 body{
     font-family:Inter,Arial,sans-serif;
@@ -36,11 +31,6 @@ header{
     background:rgba(255,255,255,.8);
     backdrop-filter:blur(10px);
     border-bottom:1px solid #ddd;
-}
-
-body.dark header{
-    background:rgba(15,23,42,.8);
-    border-color:#334155;
 }
 
 .nav{
@@ -173,25 +163,4 @@ footer{
     border-radius:14px;
     border:1px solid #ddd;
     font-size:17px;
-}
-
-/* ===== ダークモード追加 ===== */
-
-body.dark .card{
-    background: var(--card);
-    color: var(--text);
-}
-
-body.dark .card p{
-    color:#cbd5e1;
-}
-
-body.dark #search{
-    background:#1e293b;
-    color:white;
-    border:1px solid #475569;
-}
-
-body.dark #search::placeholder{
-    color:#94a3b8;
 }
