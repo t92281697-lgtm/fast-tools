@@ -1,11 +1,22 @@
-const themeBtn = document.getElementById("themeBtn");
+const search = document.getElementById("search");
 
-themeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+if(search){
 
-    if (document.body.classList.contains("dark")) {
-        themeBtn.textContent = "☀️";
-    } else {
-        themeBtn.textContent = "🌙";
-    }
+search.addEventListener("input",()=>{
+
+const keyword = search.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(card=>{
+
+const text = card.innerText.toLowerCase();
+
+card.style.display =
+text.includes(keyword)
+? "block"
+: "none";
+
 });
+
+});
+
+}
