@@ -28,7 +28,7 @@ if (search) {
 // ダークモード
 // =========================
 
-const themeBtn = document.getElementById("theme-toggle");
+const themeBtn = document.getElementById("themeBtn");
 
 if (themeBtn) {
 

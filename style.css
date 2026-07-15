@@ -174,3 +174,24 @@ footer{
     border:1px solid #ddd;
     font-size:17px;
 }
+
+/* ===== ダークモード追加 ===== */
+
+body.dark .card{
+    background: var(--card);
+    color: var(--text);
+}
+
+body.dark .card p{
+    color:#cbd5e1;
+}
+
+body.dark #search{
+    background:#1e293b;
+    color:white;
+    border:1px solid #475569;
+}
+
+body.dark #search::placeholder{
+    color:#94a3b8;
+}
