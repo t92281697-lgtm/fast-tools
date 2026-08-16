@@ -1,85 +1,127 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fast Tools - Free Online Tools</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="無料・ログイン不要で使える便利なWebツール集">
+    <title>Fast Tools | 無料オンラインツール</title>
+    <meta name="description" content="QRコード生成、パスワード生成など、無料で使える便利なオンラインツールを提供しています。ログイン不要ですぐに使えます。">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="container nav">
-    <h1>⚡ Fast Tools</h1>
-
-  </div>
+    <div class="container nav">
+        <a href="./" class="logo">⚡ Fast Tools</a>
+    </div>
 </header>
 
-<section class="hero">
+<main>
 
-<h2>Fast, Free, No Login.</h2>
+    <section class="hero">
+        <div class="container">
 
-<p>
-無料で使えるオンラインツール
-</p>
+            <h1>Fast Tools</h1>
 
-<input
-id="search"
-type="text"
-placeholder="ツールを検索..."
->
+            <p>
+                無料・高速・ログイン不要のオンラインツール
+            </p>
 
-</section>
+            <input
+                type="text"
+                id="search"
+                placeholder="🔍 ツールを検索..."
+                autocomplete="off"
+            >
 
-<main class="container">
+        </div>
+    </section>
 
-<h3>人気ツール</h3>
 
-<div class="grid">
+    <section class="tools-section">
 
-<a class="card" href="tools/qr-generator/">
+        <div class="container">
 
-<span class="badge">NEW</span>
+            <h2>⭐ 人気のツール</h2>
 
-<h4>🔳 QR Code Generator</h4>
+            <div class="grid">
 
-<p>URLや文字列からQRコードを無料で生成できます。</p>
+                <a class="card" href="tools/qr-generator/">
 
-</a>
+                    <span class="badge">NEW</span>
 
-<a class="card" href="tools/password-generator/">
+                    <div class="icon">🔳</div>
 
-<span class="badge">NEW</span>
+                    <h3>QR Code Generator</h3>
 
-<h4>🔐 Password Generator</h4>
+                    <p>
+                        URLや文字列からQRコードを無料で生成できます。
+                    </p>
 
-<p>安全なランダムパスワードをワンクリックで生成。</p>
+                </a>
 
-</a>
 
-<div class="card">
-<h4>📄 JSON Formatter</h4>
-<p>近日公開</p>
-</div>
+                <a class="card" href="tools/password-generator/">
 
-<div class="card">
-<h4>🆔 UUID Generator</h4>
-<p>近日公開</p>
-</div>
+                    <span class="badge">NEW</span>
 
-</div>
+                    <div class="icon">🔐</div>
+
+                    <h3>Password Generator</h3>
+
+                    <p>
+                        安全なランダムパスワードを簡単に生成できます。
+                    </p>
+
+                </a>
+
+
+                <div class="card coming-soon">
+
+                    <div class="icon">📄</div>
+
+                    <h3>JSON Formatter</h3>
+
+                    <p>
+                        JSONを見やすく整形するツール。
+                    </p>
+
+                    <span class="coming">Coming Soon</span>
+
+                </div>
+
+
+                <div class="card coming-soon">
+
+                    <div class="icon">🆔</div>
+
+                    <h3>UUID Generator</h3>
+
+                    <p>
+                        UUIDをすばやく生成するツール。
+                    </p>
+
+                    <span class="coming">Coming Soon</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>
 
+
 <footer>
-
-© 2026 Fast Tools
-
+    <div class="container">
+        <p>© 2026 Fast Tools</p>
+    </div>
 </footer>
+
 
 <script src="script.js"></script>
 
