@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UUID Generator | Fast Tools</title>
+    <meta name="description" content="UUID v4を無料で生成できるオンラインツール。ログイン不要ですぐに使えます。">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="../../" class="back">← Fast Tools</a>
+
+    <h1>🆔 UUID Generator</h1>
+
+    <p>UUID v4を無料で生成します。</p>
+
+    <div class="result-area">
+
+        <input
+            type="text"
+            id="result"
+            readonly
+            placeholder="UUIDがここに表示されます"
+        >
+
+        <button id="generateBtn">
+            UUIDを生成
+        </button>
+
+        <button id="copyBtn">
+            📋 コピー
+        </button>
+
+    </div>
+
+    <h2>10個まとめて生成</h2>
+
+    <button id="generate10Btn">
+        🔢 10個生成
+    </button>
+
+    <textarea
+        id="multipleResult"
+        readonly
+        placeholder="10個のUUIDがここに表示されます"
+    ></textarea>
+
+    <button id="copy10Btn">
+        📋 10個まとめてコピー
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
