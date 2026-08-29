@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JSON Formatter | Fast Tools</title>
+    <meta name="description" content="JSONを無料で整形・圧縮できるオンラインツール。ログイン不要ですぐに使えます。">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="../../" class="back">← Fast Tools</a>
+
+    <h1>📄 JSON Formatter</h1>
+
+    <p>JSONを見やすく整形する無料オンラインツールです。</p>
+
+    <textarea
+        id="input"
+        placeholder='ここにJSONを貼り付けてください'
+    ></textarea>
+
+    <div class="buttons">
+
+        <button id="formatBtn">
+            ✨ 整形
+        </button>
+
+        <button id="copyBtn">
+            📋 コピー
+        </button>
+
+        <button id="clearBtn">
+            🗑️ クリア
+        </button>
+
+    </div>
+
+    <p id="message"></p>
+
+    <textarea
+        id="output"
+        readonly
+        placeholder="整形されたJSONがここに表示されます"
+    ></textarea>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
