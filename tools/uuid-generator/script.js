@@ -9,34 +9,36 @@ const copy10Btn = document.getElementById("copy10Btn");
 
 
 // UUIDを1個生成
-generateBtn.addEventListener("click", () => {
-
+generateBtn.addEventListener("click", function () {
     result.value = crypto.randomUUID();
-
     message.textContent = "UUIDを生成しました！";
-
 });
 
 
-// UUIDをコピー
-copyBtn.addEventListener("click", async () => {
+// 1個コピー
+copyBtn.addEventListener("click", async function () {
 
-    if (!result.value) {
+    if (result.value === "") {
         message.textContent = "先にUUIDを生成してください。";
         return;
     }
 
-    await navigator.clipboard.writeText(result.value);
-
-    message.textContent = "UUIDをコピーしました！";
+    try {
+        await navigator.clipboard.writeText(result.value);
+        message.textContent = "UUIDをコピーしました！";
+    } catch (error) {
+        result.select();
+        document.execCommand("copy");
+        message.textContent = "UUIDをコピーしました！";
+    }
 
 });
 
 
-// UUIDを10個生成
-generate10Btn.addEventListener("click", () => {
+// 10個生成
+generate10Btn.addEventListener("click", function () {
 
-    const uuids = [];
+    let uuids = [];
 
     for (let i = 0; i < 10; i++) {
         uuids.push(crypto.randomUUID());
@@ -45,20 +47,24 @@ generate10Btn.addEventListener("click", () => {
     multipleResult.value = uuids.join("\n");
 
     message.textContent = "UUIDを10個生成しました！";
-
 });
 
 
-// UUIDを10個まとめてコピー
-copy10Btn.addEventListener("click", async () => {
+// 10個まとめてコピー
+copy10Btn.addEventListener("click", async function () {
 
-    if (!multipleResult.value) {
+    if (multipleResult.value === "") {
         message.textContent = "先にUUIDを10個生成してください。";
         return;
     }
 
-    await navigator.clipboard.writeText(multipleResult.value);
-
-    message.textContent = "10個のUUIDをコピーしました！";
+    try {
+        await navigator.clipboard.writeText(multipleResult.value);
+        message.textContent = "10個のUUIDをコピーしました！";
+    } catch (error) {
+        multipleResult.select();
+        document.execCommand("copy");
+        message.textContent = "10個のUUIDをコピーしました！";
+    }
 
 });
