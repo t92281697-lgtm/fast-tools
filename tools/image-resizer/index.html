@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>画像リサイズ・圧縮 | Fast Tools</title>
+    <meta name="description" content="画像のサイズ変更と圧縮ができる無料オンラインツール。ブラウザ内で処理します。">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="../../" class="back">← Fast Tools</a>
+
+    <h1>🖼️ 画像リサイズ・圧縮</h1>
+
+    <p>
+        画像のサイズを変更して、軽量化できます。
+    </p>
+
+    <div class="upload-area" id="uploadArea">
+
+        <p>画像をここにドラッグ＆ドロップ</p>
+
+        <span>または</span>
+
+        <label for="imageInput" class="upload-button">
+            画像を選択
+        </label>
+
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+            hidden
+        >
+
+    </div>
+
+    <div id="editor" class="editor" hidden>
+
+        <div class="preview">
+            <img id="previewImage" alt="プレビュー">
+        </div>
+
+        <div class="settings">
+
+            <label>
+                幅
+                <input type="number" id="width" min="1">
+                px
+            </label>
+
+            <label>
+                高さ
+                <input type="number" id="height" min="1">
+                px
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" id="keepRatio" checked>
+                縦横比を維持
+            </label>
+
+            <label>
+                画質
+                <input
+                    type="range"
+                    id="quality"
+                    min="10"
+                    max="100"
+                    value="80"
+                >
+                <span id="qualityValue">80%</span>
+            </label>
+
+            <label>
+                保存形式
+                <select id="format">
+                    <option value="image/jpeg">JPG</option>
+                    <option value="image/png">PNG</option>
+                    <option value="image/webp">WebP</option>
+                </select>
+            </label>
+
+            <button id="processBtn">
+                ✨ リサイズ・圧縮
+            </button>
+
+            <button id="downloadBtn" hidden>
+                ⬇️ 画像をダウンロード
+            </button>
+
+            <button id="resetBtn" class="secondary">
+                🔄 別の画像を選ぶ
+            </button>
+
+        </div>
+
+    </div>
+
+    <p id="message"></p>
+
+    <canvas id="canvas" hidden></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

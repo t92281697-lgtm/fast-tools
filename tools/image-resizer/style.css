@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* アップロード */
+
+.upload-area {
+    background: white;
+    border: 2px dashed #cbd5e1;
+    border-radius: 18px;
+    padding: 60px 20px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.upload-area.dragover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.upload-area p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.upload-area span {
+    display: block;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.upload-button:hover {
+    background: #1d4ed8;
+}
+
+/* 編集画面 */
+
+.editor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.preview,
+.settings {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* プレビュー */
+
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    background: #f8fafc;
+}
+
+#previewImage {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* 設定 */
+
+.settings label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+.settings input[type="number"],
+.settings select {
+    width: 100%;
+    margin-top: 7px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    background: white;
+}
+
+.settings input[type="range"] {
+    width: 75%;
+    margin-top: 10px;
+}
+
+#qualityValue {
+    display: inline-block;
+    margin-left: 8px;
+    color: #2563eb;
+}
+
+.checkbox {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+/* ボタン */
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button.secondary {
+    background: #64748b;
+}
+
+button.secondary:hover {
+    background: #475569;
+}
+
+#message {
+    text-align: center;
+    margin-top: 20px;
+    min-height: 25px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding-top: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .editor {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-area {
+        padding: 45px 15px;
+    }
+
+}
