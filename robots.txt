@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://t92281697-lgtm.github.io/fast-tools/sitemap.xml
