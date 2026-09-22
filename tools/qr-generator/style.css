@@ -60,3 +60,29 @@ button:hover{
     display:flex;
     justify-content:center;
 }
+
+.guide {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+.guide h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.guide ol {
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.guide li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.guide p {
+    line-height: 1.7;
+}
